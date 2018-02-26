@@ -27,6 +27,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".PhotoPageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bignerdranch.android.photogallery.PhotoGalleryActivity"/>
+        </activity>
+
         <service android:name=".PollService"/>
 
         <receiver android:name=".StartupReceiver">
